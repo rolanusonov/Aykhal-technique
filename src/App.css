@@ -1,0 +1,663 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    background: #FFFFFC;
+    z-index: 1;
+    -webkit-box-shadow: 0 12px 8px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 12px 8px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 12px 8px 0 rgba(34, 60, 80, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nameHead {
+    font-size: 28px;
+}
+
+.headBlock {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.headLogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headLogoHome {
+    width: 60px;
+}
+
+.headlogoSet {
+    position: absolute;
+    width: 27px;
+    animation: logoSetKey infinite 3s;
+}
+
+@keyframes logoSetKey {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.headNumberIcon {
+    width: 41px;
+    height: 40px;
+    animation: HeadNumberIconKey infinite 1.5s;
+}
+
+@keyframes HeadNumberIconKey {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(8deg);
+    }
+
+    20% {
+        transform: rotate(-8deg);
+    }
+
+    30% {
+        transform: rotate(8deg);
+    }
+
+    40% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    60% {
+        transform: rotate(-8deg);
+    }
+
+    70% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(0);
+    }
+
+    90% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.numberHeadBlock {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: black;
+
+}
+
+.headPathMap {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.numberHead {
+    font-size: 22px;
+}
+
+@media(max-width:1140px) {
+    .nameHead {
+        font-size: 16px;
+    }
+
+    .headNumberIcon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .numberHead {
+        font-size: 18px;
+    }
+}
+
+@media(max-width:992px) {
+    .headPathMap {
+        width: 42%;
+        justify-content: center;
+    }
+
+    .headAddress {
+        width: 50%;
+    }
+
+    .headBlock {
+        display: flex;
+        align-items: center;
+        width: 60%;
+        gap: 25px;
+    }
+}
+
+@media (max-width:776px) {
+    .header {
+        width: 100%;
+        flex-wrap: wrap;
+
+    }
+
+    .headBlock {
+        width: 100%;
+        justify-content: center;
+
+    }
+
+    .headPathMap {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .headLogo {
+        margin-left: -50px;
+    }
+}
+
+@media(max-width:576px) {
+    .headLogo {
+        margin-left: 0;
+    }
+
+    .headAddress {
+        text-align: center;
+        width: 35%;
+    }
+
+}
+
+@media(max-width:451px) {
+    .headBlock {
+        flex-wrap: wrap;
+    }
+
+    .headAddress {
+        width: 38%;
+        font-size: 13px;
+        padding: 10px 0;
+    }
+}
+@media(max-width:401px){
+    .numberHeadBlock{
+        display: none;
+    }
+    .headPathMap{
+        display: none;
+    }
+}
+
+/*HEADER*/
+/*HERO*/
+#hero {
+    background: url("../src/companents/img/img hero.png") no-repeat center/cover;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 270px 0;
+    gap: 15px;
+}
+
+.heroUnderText {
+    font-size: 36px;
+    color: #FFFFFC;
+}
+
+.heroTitle {
+    color: #FFFFFC;
+    font-size: 76px;
+}
+
+.heroDesc {
+    font-size: 20px;
+    color: #FFFFFCE5;
+    width: 30%;
+}
+
+.heroBtn {
+    background: #FFC600;
+    color: #FFFFFC;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    animation: infinite heroBtnKey 2s;
+}
+
+@keyframes heroBtnKey {
+    0% {
+        scale: 1;
+    }
+
+    50% {
+        scale: 0.8;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+@media (max-width:776px) {
+    .heroTitle {
+         font-size: 49px;
+    }
+    .heroDesc {
+        width: 55%;
+    }
+}
+@media (max-width:451px) {
+  .heroTitle {
+    font-size: 37px;
+}
+.heroUnderText {
+    font-size: 28px;
+ }
+ .heroDesc {
+    width: 100%;
+}
+}
+/*HERO*/
+/*CAR-PARK*/
+
+.carTitle {
+    font-size: 76px;
+}
+
+.carDesc {
+    font-size: 24px;
+    color: #1A1A1A99;
+}
+
+#oll:checked~.trac,
+#oll:checked~.maz,
+#oll:checked~.anco,
+#oll:checked~.cargo,
+#oll:checked~.kat {
+    display: flex;
+}
+
+
+#trac:checked~.maz,
+#trac:checked~.anco,
+#trac:checked~.cargo,
+#trac:checked~.kat {
+    display: none;
+}
+
+#maz:checked~.trac,
+#maz:checked~.anco,
+#maz:checked~.cargo,
+#maz:checked~.kat {
+    display: none;
+}
+
+#kat:checked~.maz,
+#kat:checked~.anco,
+#kat:checked~.cargo,
+#kat:checked~.trac {
+    display: none;
+}
+
+#anco:checked~.maz,
+#anco:checked~.kat,
+#anco:checked~.cargo,
+#anco:checked~.trac {
+    display: none;
+}
+
+#cargo:checked~.maz,
+#cargo:checked~.kat,
+#cargo:checked~.anco,
+#cargo:checked~.trac {
+    display: none;
+}
+
+#kat:checked~.tracKat {
+    background: #FFC600;
+    color: #FFFFFC;
+}
+
+#cargo:checked~.cargos {
+    background: #FFC600;
+    color: #FFFFFC;
+}
+
+#anco:checked~.carAnco {
+    background: #FFC600;
+    color: #FFFFFC;
+}
+
+#maz:checked~.carMaz {
+    background: #FFC600;
+    color: #FFFFFC;
+}
+
+#trac:checked~.tractor {
+    background: #FFC600;
+    color: #FFFFFC;
+}
+
+.tabsBtnOll {
+    margin: 20px 50px;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    background: #FFC600;
+    color: #FFFFFC;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+}
+
+#kat:checked~.olloll {
+    background: #FFFFFC;
+    color: black;
+}
+
+#cargo:checked~.olloll {
+    background: #FFFFFC;
+    color: black;
+}
+
+#anco:checked~.olloll {
+    background: #FFFFFC;
+    color: black;
+}
+
+#maz:checked~.olloll {
+    background: #FFFFFC;
+    color: black;
+}
+
+#trac:checked~.olloll {
+    background: #FFFFFC;
+    color: black;
+}
+
+
+
+#oll:checked~.olloll {
+    background: #FFC600;
+    color: white;
+}
+
+
+.tabsInput {
+    display: none;
+}
+
+.carTabs {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+.tabsBtn {
+    margin: 20px 50px;
+    width: 90px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+    background: #FFFFFC;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+    box-shadow: 0 0 25px 0 rgba(34, 60, 80, 0.2);
+}
+
+.tabsImg {
+    width: 350px;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid white 1px;
+}
+
+.tracCardBtn {
+    padding: 20px 25px;
+    color: #FFFFFC;
+    background: #FFC600;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.tracCardBtn:hover {
+    scale: 1;
+    background: red;
+    transition: 0.5s;
+
+}
+
+.tracPrice {
+    font-size: 17px;
+    color: #FFFFFCCC;
+
+
+    margin: 20px 0;
+    border-bottom-style: dotted;
+}
+
+.tracPrice span {
+    font-size: 28px;
+    color: #FFFFFC;
+    margin: 0 5px;
+}
+
+.tracName {
+    color: #FFFFFC;
+    border-bottom-style: dotted;
+}
+
+.trac {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.maz {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.anco {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.kat {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tracCard {
+    width: 350px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}
+@media(max-width:1140px){
+    .trac {
+          flex-wrap: wrap;
+     }
+}
+@media(max-width:992px){
+    .tabsImg {
+        width: 253px;
+        height: 146px;
+    }
+    .tracCard {
+        width: 269px;
+    }
+    .tracName {
+        font-size: 27px;
+    }
+    .tracCardBtn {
+        padding: 9px 25px;
+    }
+}
+@media(max-width:776px){
+    .carTabs {
+        padding: 12px;
+    }
+}
+@media(max-width:576px){
+    .maz  {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .kat  {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .anco  {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .cargo  {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+     }
+}
+@media(max-width:451px){
+    .carDesc {
+        font-size: 16px;
+     }
+     .carTitle {
+        font-size: 49px;
+    }
+}
+@media(max-width:401px){
+    .carTabs {
+        padding: 0px;
+     }
+     .tabsBtn {
+        margin: 15px 39px;
+     }
+     .tabsBtnOll {
+        margin:15px 39px;
+     }
+}
+/*CARPARK*/
+/*MAP*/
+.map {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 0 50px 0;
+}
+
+.mapBlock {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 25px;
+    color: white;
+}
+
+.mapName {
+    width: 500px;
+    height: 400px;
+    border: none;
+}
+
+.mapContact {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mapContact div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mapContact div a {
+    color: #FFFFFC;
+
+}
+
+.paymentImg {
+    background: #FFFFFC;
+    padding: 5px 15px;
+}
+@media (max-width:992px) {
+    .mapName{
+        width: 400px;
+        height: 300px;
+    }
+}
+@media (max-width:776px) {
+    .mapBlock{
+        flex-direction: column;
+    }
+    .mapName{
+        margin: 20px 0 0 0;
+        width: 500px;
+        height: 350px;
+    }
+}
+@media (max-width:451px) {
+    .mapName{
+        width: 300px;
+        height: 200px;
+    }
+}
